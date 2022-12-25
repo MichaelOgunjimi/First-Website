@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-image: linear-gradient(rgba(65, 66, 68, 0.7), rgba(4, 9, 30, 10.7)), url(images/davidcap.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 120vh;
+}
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    line-height: 80px;
+    padding: 0px 80px;
+}
+nav .logo{
+    float: left;
+}
+nav ul{
+    float: right;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+nav ul li a:hover{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    border: 1px solid none;
+}
+
+nav ul .active{
+    color:rgb(104, 114, 91) ;
+    opacity: 1;
+
+}
+.checkbtn{
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    float: right;
+    display: none;
+}
+#check{
+    display:none;
+}
+
+@media screen and (max-width: 990px) {
+    nav{
+        padding: 0px 50px;
+    }
+    .checkbtn{
+        display:block ;
+    }
+    nav .logo{
+        size-adjust: 30px;
+        size: 30px;
+    }
+    nav ul{
+        width: 100%;
+        height: 80vh;
+        background-color: #53694c;
+        position: fixed;
+        top: 75px;
+        left: -100%;
+        text-align: center;
+        transition: 0.4s ease;
+        
+    }
+    nav ul li{
+        display: block;
+        margin: 60px 0px;
+        line-height: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+
+
+}
+
+#signup {
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    padding-left: 80px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: white ;
+}
+ 
+#signup h1{
+    margin-left: 120px;
+}
+
+#signup p{
+    font-style: italic;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+#signup .holder{
+    font-size:15px;
+    width: 100%;
+    padding: 10px 0px;
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+
+}
+
+#signup .btn {
+    font-size: 16px;
+    font-weight: 300;
+    margin: 15px;
+    padding: 6px 12px;
+    line-height: 1;
+    opacity: 0.7;
+    display: inline-block;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    transition: 1s;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#signup .btn:hover {
+    background-color: black;
+    outline: none;
+    border-radius: 2px;
+    color: rgb(228, 228, 228);
+    border: 1px solid rgb(228, 228, 228);
+}
+
+
+footer ul{
+    top:100%;
+    left: 50%;
+    transform: translate(-40%, -40%);
+    position: absolute;
+    float: right;
+    width: 100%;
+}
+footer ul li{
+  
+    list-style: none;
+    display: inline-block;
+}
+nav ul li a{
+    padding: 0px 20px;
+}
